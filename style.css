@@ -1,0 +1,404 @@
+*, ::after, ::before{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 1099px) and (min-width: 300px) {
+  .presentation p{
+    width:50vw;
+  } 
+}
+
+@media (max-width: 1650px) and (min-width: 300px) {
+.project-tile a{
+    font-size:1.2rem;
+  }
+}
+
+@media (max-width: 1510px) {
+.project-tile a{
+    font-size:1rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .social-media{
+    margin-left:44vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  .social-media{
+    margin-left:20vw;
+  }
+}
+
+@media (max-width: 1210px) and (min-width:800px){
+  .hidden-description{
+    font-size:1.1rem;
+  }
+}
+
+body{
+  width:99vw;
+  border:1px solid transaparent;
+  background-color:#A9F3A6;
+  overflow-x:hidden;
+  font-family:sans-serif;
+ 
+  
+}
+
+header{
+  width:100%;
+  background-color:#41BA61;
+  height:10vh;
+  position:fixed;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  top:0;
+  z-index:2;
+  
+}
+
+.name{
+  margin-left:20px;
+  font-size:2rem;
+  font-family: trebuchet ms;
+  font-weight:bold;
+}
+
+#navbar{
+  position:top;
+  top:0; 
+}
+
+.navbar ul{
+  display:flex;
+  flex-direction:columns;
+  margin-right:100px;
+  list-style-type:none;
+  align-items:center;
+ 
+  
+}
+
+.nav-link{
+  display:block;
+  margin-right:100px;
+  padding-top:10px;
+  padding-bottom:10px;
+  text-decoration:none; 
+  font-size:1.5rem;
+  font-family:trebuchet ms;
+  border:solid 1px #F9EEBB;
+  border-radius: 50%;
+  background-color:#F9EEBB;
+  height:100%;
+  width:70%;
+  text-align:center;
+  color:black;
+  
+}
+
+
+
+#welcome-section{
+  margin-top:0;
+  height:100vh;
+  width:100%;
+  background:repeating-linear-gradient(-45deg,#F8E795 0%, #F9EEBB 40%);
+  position:relative;
+  justify-content:center;
+  border:solid 1px transparent;
+
+}
+
+h1{
+  text-align:center;
+  margin-top:25vh;
+  font-size:2.5rem;
+}
+
+.presentation p{
+  
+  margin: 70px auto; 
+  font-size: 1.5rem;
+  text-align:center;
+  
+}
+
+.my-work{
+  
+  height:150px;
+  width:80px;
+  bottom:5%;
+  left:48%;
+  position:absolute;
+  text-align:center;
+  font-size:1.7rem;
+
+
+ 
+}
+
+.my-work a {
+  color:black;
+
+}
+
+.arrow{
+  width:100%;
+  margin-top:10px;
+ 
+
+}
+
+.arrow-main{
+  height:50px;
+  width:4px;
+  top:55%;
+  left:48%;
+  background-color:black;
+  position:absolute;
+}
+
+.arrow-left{
+  height:30px;
+  width:4px;
+  top:70%;
+  left:50%;
+  background-color:black;
+  position:absolute;
+  transform:rotate(-45deg);
+  transform-origin: bottom left;
+}
+
+.arrow-right{
+  height:30px;
+  width:4px;
+  top:70%;
+  right:50%;
+  background-color:black;
+  position:absolute;
+  transform:rotate(45deg);
+  transform-origin: bottom right;
+}
+
+
+#projects{
+  display:flex;
+  
+}
+
+.project-tile{
+  margin: 0 10% 0 10%;
+  width:100vw;
+  position:relative;
+  height:120vh;
+}
+
+.project-tile a{
+  color:black;
+}
+
+.product-landing-page{
+  width:18vw;
+  height:31vh;
+  top:20%;
+  left:10%;
+  z-index:1;
+  position: absolute;
+  display:inline;
+  border:solid 3px #41BA61;
+  text-align:center;
+  font-size:1.4rem;
+  background-color:#F8E795;
+  overflow:hidden;
+  border-radius:5%;
+  padding-bottom:5px; 
+}
+
+.product-landing-page img{
+  min-width:100%;
+  height:87%;
+  padding-bottom:18px;
+  display:block;
+  margin:auto;
+}
+
+.survey-form{
+  width:18vw;
+  height:31vh;
+  top:20%;
+  right:10%;
+  z-index:1;
+  position: absolute;
+  border:solid 3px #41BA61;
+  text-align:center;
+  font-size:1.4rem;
+  background-color:#F8E795;
+  overflow:hidden; 
+  border-radius:5%; 
+  padding-bottom:5px;
+}
+
+.survey-form img{
+  min-width:100%;
+  height:87%;
+  padding-bottom:18px;
+  display:block;
+  margin:auto;
+}
+
+.technical-documentation-page{
+  width:18vw;
+  height:31vh;
+  top:55%;
+  right:10%;
+  z-index:1;
+  position: absolute;
+  border:solid 3px #41BA61;
+  text-align:center;
+  font-size:1.3rem;
+  background-color:#F8E795;
+  overflow:hidden;
+  border-radius:5%;
+  padding-bottom:5px;
+}
+
+.technical-documentation-page img{
+  min-width:100%;
+  height:87%;
+  padding-bottom:18px;
+  display:block;
+  margin:auto;
+}
+
+.tribute-page{
+  width:18vw;
+  height:31vh;
+  top:55%;
+  left:10%;
+  z-index:1;
+  position: absolute;
+  border:solid 3px #41BA61;
+  text-align:center;
+  font-size:1.4rem;
+  background-color:#F8E795;
+  overflow:hidden;
+  border-radius:5%;
+  padding-bottom:5px;
+}
+
+.tribute-page img{
+  min-width:100%;
+  height:87%;
+  padding-bottom:18px;
+  display:block;
+  margin:auto;
+}
+
+a {
+  text-decoration:none;
+}
+
+.product-landing-page{
+ 
+  display:inline;
+}
+
+.hidden-description{
+  position: absolute;
+  display:none;
+  height:80%;
+  padding:15% 10%;
+  visibility: hidden;
+   transition: visibility 0s, opacity 1s; 
+   background:#41BA61;  
+   opacity:80%;
+}
+
+.product-landing-page:hover .hidden-description,
+.survey-form:hover .hidden-description,
+.tribute-page:hover .hidden-description,
+.technical-documentation-page:hover .hidden-description
+{
+  display:block;
+   visibility: visible;
+}
+
+
+.codepen-profile{
+  width:160px;
+  height:160px;
+  top:45%;
+  left:45%;
+  position:absolute;
+  
+
+}
+
+.codepen-profile button{
+  font-size:1.6rem;
+  height:100%;
+  width:100%;
+  border:5px solid #F8E795; 
+  border-radius:50%;
+  background-color:#41BA61;
+  color:#055213;
+  font-weight:bold;
+  -webkit-text-stroke:0.2px #F8E795; 
+}
+
+.codepen-profile button:hover{
+  cursor:pointer;
+}
+
+#contact{
+  height:130px;
+  background-color:#F8E795;
+  display:flex;
+  justify-content:space-between;
+
+ 
+}
+
+.social-media{
+  margin-top:20px;
+ 
+}
+
+.social-media p{
+  font-size:1.5rem;
+  padding-bottom:20px;
+}
+
+i{
+  font-size:1.8rem;
+}
+
+#linkedin, #email{
+  font-size:1.3rem;
+  color: #0a66c2;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+
+.author{
+  margin:10px 30px 0 0;
+  font-size:1.3rem;
+}
+
+.author a{
+  color:green;
+  font-weight:bold;
+}
